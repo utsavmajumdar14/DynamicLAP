@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -88,6 +88,115 @@
             <p>For more details, check out the <li><a href="https://github.com/utsavmajumdar14/DynamicLAP/blob/main/Majumdar%20et%20al.%20-%20Accelerating%20Dynamic%20Linear%20Assignment%20Problem%20solver.pdf">REPORT</a></li></p>
         </section>
 
+    </main>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accelerating Dynamic Linear Assignment Problem Solver Using Primal Algorithms</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External dark mode styles -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1e1e1e;
+            color: #d1d1d1;
+            padding: 40px;
+            line-height: 1.8;
+        }
+        h1, h2 {
+            color: #f0e68c;
+            margin-bottom: 20px;
+        }
+        a {
+            color: #ffdf00;
+            text-decoration: none;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+        a:hover {
+            color: #ffeb3b;
+            text-shadow: 0 0 10px #ffeb3b;
+        }
+        p {
+            margin-bottom: 25px;
+            font-size: 1.1em;
+        }
+        ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 15px;
+            font-size: 1em;
+        }
+        li::before {
+            content: "• ";
+            color: #ffd700;
+        }
+        header, main {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Performance Analysis: Dynamic Linear Assignment Problem</h1>
+    </header>
+    <main>
+        <section id="overview">
+            <h2>Overview of Performance</h2>
+            <p>An in-depth comparison between the Hungarian algorithm and the modified primal Balinski algorithm.</p>
+            <ul>
+                <li><a href="all/balinski_vs_hungarian.html">Summary of Results</a></li>
+                <li><a href="all/balinski_vs_hungarian_simplify.html">Simplified Overview</a></li>
+            </ul>
+        </section>
+        
+        <section id="granular">
+            <h2>Granular Analysis by Sparsity Fraction</h2>
+            <p>Examine the performance variations across different sparsity fractions of the cost matrix.</p>
+            <ul>
+                <li><a href="all/1_frac_0.01.html">Frac = 0.01</a></li>
+                <li><a href="all/2_frac_0.05.html">Frac = 0.05</a></li>
+                <li><a href="all/3_frac_0.1.html">Frac = 0.1</a></li>
+                <li><a href="all/4_frac_0.5.html">Frac = 0.5</a></li>
+                <li><a href="all/5_frac_1.html">Frac = 1</a></li>
+                <li><a href="all/6_frac_5.html">Frac = 5</a></li>
+                <li><a href="all/7_frac_10.html">Frac = 10</a></li>
+            </ul>
+        </section>
+
+        <section id="transition">
+            <h2>Transition Region Exploration</h2>
+            <p>Isolate the cost matrix size and sparsity ranges where significant changes occur.</p>
+            <ul>
+                <li><a href="all/balinski_vs_hungarian_transition.html">Transition Region Plot</a></li>
+            </ul>
+        </section>
+
+        <section id="granulartrans">
+            <h2>Deep Dive: Transition Area</h2>
+            <p>Further exploration with frac values of 0.1, 0.2, 0.3, and 0.4.</p>
+            <ul>
+                <li><a href="transition/transition_frac_0.1.html">Frac = 0.1</a></li>
+                <li><a href="transition/transition_frac_0.2.html">Frac = 0.2</a></li>
+                <li><a href="transition/transition_frac_0.3.html">Frac = 0.3</a></li>
+                <li><a href="transition/transition_frac_0.4.html">Frac = 0.4</a></li>
+            </ul>
+        </section>
+
+        <section id="report">
+            <h2>Full Report</h2>
+            <p>For a comprehensive analysis, refer to the full <a href="https://github.com/utsavmajumdar14/DynamicLAP/blob/main/Majumdar%20et%20al.%20-%20Accelerating%20Dynamic%20Linear%20Assignment%20Problem%20solver.pdf">Research Report</a>.</p>
+        </section>
     </main>
 </body>
 </html>
