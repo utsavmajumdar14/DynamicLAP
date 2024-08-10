@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accelerating Dynamic Linear Assignment Problem solver using Primal Algorithms</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Dark mode styles -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1f1f1f;
+            color: #ffffff;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #e5dfb9;
+        }
+        a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #ffeb3b;
+        }
+        p {
+            margin-bottom: 20px; /* Adjust the value to add more space */
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Plots of performance result</h1>
+    </header>
+    <main>
+        <section id="overview">
+            <h2>Overview Plots</h2>
+            <p>A big picture look at the performance comparison between Hungarian algorithm and the modified primal Balinski algorithm</p>
+            <ul>
+                <li><a href="all/balinski_vs_hungarian.html">Summary</a></li>
+                <li><a href="all/balinski_vs_hungarian_simplify.html">Simplified</a></li>
+            </ul>
+        </section>
+        
+        <section id="granular">
+            <h2>Further granularity for different sparsity fractions of cost matrix</h2>
+            <p>Notice the difference in performance with varying frac value</p>
+            <ul>
+                <li><a href="all/1_frac_0.01.html">Frac = 0.01</a></li>
+                <li><a href="all/2_frac_0.05.html">Frac = 0.05</a></li>
+                <li><a href="all/3_frac_0.1.html">Frac = 0.1</a></li>
+                <li><a href="all/4_frac_0.5.html">Frac = 0.5</a></li>
+                <li><a href="all/5_frac_1.html">Frac = 1</a></li>
+                <li><a href="all/6_frac_5.html">Frac = 5</a></li>
+                <li><a href="all/7_frac_10.html">Frac = 10</a></li>
+            </ul>
+        </section>
+
+        <section id="transition">
+            <h2>Transition region</h2>
+            <p>We want to isolate the ranges of cost matrix size and sparsity from which</p>
+            <ul>
+                <li><a href="all/balinski_vs_hungarian_transition.html">Plot in transition region</a></li>
+            </ul>
+        </section>
+
+        <section id="granulartrans">
+            <h2>Further granular deeper dive in this transition area</h2>
+            <p>We take the frac values of 0.1, 0.2, 0.3, 0.4.</p>
+            <ul>
+                <li><a href="transition/transition_frac_0.1.html">Frac = 0.01</a></li>
+                <li><a href="transition/transition_frac_0.2.html">Frac = 0.05</a></li>
+                <li><a href="transition/transition_frac_0.3.html">Frac = 0.1</a></li>
+                <li><a href="transition/transition_frac_0.4.html">Frac = 0.5</a></li>
+            </ul>
+        </section>
+
+        <section id="report">
+            <h2>Report</h2>
+            <p>For more details, check out the <li><a href="https://github.com/utsavmajumdar14/DynamicLAP/blob/main/Majumdar%20et%20al.%20-%20Accelerating%20Dynamic%20Linear%20Assignment%20Problem%20solver.pdf">REPORT</a></li></p>
+        </section>
+
+    </main>
+</body>
+</html>
